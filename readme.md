@@ -1,6 +1,6 @@
 Welcome to my Full Stack app <b>SECTOPEDIA</b>
 Sectopedia is made using <b>MEN Stack i.e MongoDB, Express & Nodejs</b> along with handlebars to provide dynamicity to the app. </br>
-Features of <b><i>SECTOPEDIA</i></b>
+Features of <b><i>SECTOPEDIA:</i></b>
 <ol>
   <li>Aims to focus on information on a particular section including details about the students,faculties, time-table and notes.</li>
   <li>Use of JWT and cookies for authentication.</li>
