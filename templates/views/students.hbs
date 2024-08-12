@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <title>Document</title>
+</head>
+<body>
+    {{>navbar}}
+    <hr>
+     <div class="searchArea">
+        <input type="search" name="searchbar" id="searchbar" placeholder="Search skills..." onkeyup="searchFunc()">
+    </div>
+    
+    <div class="students">
+        <div class="student" id="student1">
+            <div class="pic">   
+                <img src="https://i.pinimg.com/736x/c0/36/00/c0360069dcab2b3b75f2250608eb976a.jpg" alt="">  
+            </div>
+
+            <div class="info">
+                <ul>
+                    <li><b>NAME: </b>Zenitsu Agutsama</li>
+                    <li><b>REGISTRATION NUMBER: </b>2241019342</li>
+                    <li><b>ROLL NO: </b>45</li>
+                    <li><b>CGPA: </b>9.75</li>
+                    <li><b>SKILLS: </b></li>
+                    <li id="skills1">Web Developer, Java</li>
+                </ul>
+            </div>
+        </div>  
+        <div class="student" id="student2">
+            <div class="pic"><img src="https://i.pinimg.com/736x/ea/46/91/ea46916925171d83a14c973ea18db73d.jpg" alt=""></div>
+
+            <div class="info">
+                <ul>
+                    <li><b>NAME: </b>Kamado Tanjiro</li>
+                    <li><b>REGISTRATION NUMBER: </b>2241019572</li>
+                    <li><b>ROLL NO: </b>45</li>
+                    <li><b>CGPA: </b>9.95</li>
+                    <li><b>SKILLS: </b></li>
+                    <li id="skills2">Python</li>
+                </ul>
+            </div>
+        </div>  
+        <div class="student" id="student3">
+            <div class="pic"><img src="https://news24online.com/wp-content/uploads/2022/10/image-84.png" alt=""></div>
+
+            <div class="info">
+                <ul>
+                    <li><b>NAME: </b>Inouske Hashibara</li>
+                    <li><b>REGISTRATION NUMBER: </b>2256019572</li>
+                    <li><b>ROLL NO: </b>45</li>
+                    <li><b>CGPA: </b>10.0</li>
+                    <li><b>SKILLS: </b></li>
+                    <li id="skills3">Dev Ops</li>
+                </ul>
+            </div>
+        </div>  
+        <div class="student" id="student4">
+            <div class="pic"><img src="https://i.pinimg.com/236x/9e/ab/56/9eab56cb913170af773a2c8f67ed1e57.jpg" alt=""></div>
+
+            <div class="info">
+                <ul>
+                    <li><b>NAME: </b>Mikasa Ackerman</li>
+                    <li><b>REGISTRATION NUMBER: </b>2276549572</li>
+                    <li><b>ROLL NO: </b>45</li>
+                    <li><b>CGPA: </b>8.95</li>
+                    <li><b>SKILLS: </b></li>
+                    <li id="skills4">C,C++</li>
+                </ul>
+            </div>
+        </div>  
+        <div class="student" id="student5">
+            <div class="pic"><img src="https://64.media.tumblr.com/fae6d396a1872661b86951cc2216b235/4ae107aa01101733-c0/s1280x1920/9fe947788939a230108b52c5236ba08dfabef094.jpg" alt=""></div>
+
+            <div class="info">
+                <ul>
+                    <li><b>NAME: </b>Armin Arlert</li>
+                    <li><b>REGISTRATION NUMBER: </b>2241014756</li>
+                    <li><b>ROLL NO: </b>01</li>
+                    <li><b>CGPA: </b>9.99</li>
+                    <li><b>SKILLS: </b></li>
+                    <li id="skills5">Full Stack Developer</li>
+                </ul>
+            </div>
+        </div>  
+        <div class="student" id="student6">
+            <div class="pic"><img src="https://staticg.sportskeeda.com/editor/2023/12/4c8b4-17028307357388-1920.jpg?w=640" alt=""></div>
+
+            <div class="info">
+                <ul>
+                    <li><b>NAME: </b>Reiner Braun</li>
+                    <li><b>REGISTRATION NUMBER: </b>2245648309</li>
+                    <li><b>ROLL NO: </b>35</li>
+                    <li><b>CGPA: </b>8.95</li>
+                    <li><b>SKILLS: </b></li>
+                    <li id="skills6">Front End Developer</li>
+                </ul>
+            </div>
+        </div>  
+        <div class="student" id="student7">
+            <div class="pic"><img src="https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/6bf46b87-5ae1-4ad7-88cf-3291f45230b3/width=450/00304-anything-v4.5-pruned_3918500063.jpeg" alt=""></div>
+
+            <div class="info">
+                <ul>
+                    <li><b>NAME: </b>Eren Yeager</li>
+                    <li><b>REGISTRATION NUMBER: </b>2243419562</li>
+                    <li><b>ROLL NO: </b>45</li>
+                    <li><b>CGPA: </b>9.95</li>
+                    <li><b>SKILLS: </b></li>
+                    <li id="skills7">Cloud Computing</li>
+                </ul>
+            </div>
+        </div>  
+        <div class="student" id="student8">
+            <div class="pic"><img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/01/Jujutsu-Kaisen-0-Yuta-Rika.jpg" alt=""></div>
+
+            <div class="info">
+                <ul>
+                    <li><b>NAME: </b>Yuta Okkutsu</li>
+                    <li><b>REGISTRATION NUMBER: </b>2243419562</li>
+                    <li><b>ROLL NO: </b>69</li>
+                    <li><b>CGPA: </b>9.00</li>
+                    <li><b>SKILLS: </b></li>
+                    <li id="skills8">Data Analyist</li>
+                </ul>
+            </div>
+        </div>  
+        <div class="student" id="student9">
+            <div class="pic"><img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/11/nezuko-demons-slayer.jpg" alt=""></div>
+
+            <div class="info">
+                <ul>
+                    <li><b>NAME: </b>Nezuko Kamado</li>
+                    <li><b>REGISTRATION NUMBER: </b>2245349562</li>
+                    <li><b>ROLL NO: </b>45</li>
+                    <li><b>CGPA: </b>8.50</li>
+                    <li><b>SKILLS: </b></li>
+                    <li id="skills9">UI/UX Designer</li>
+                </ul>
+            </div>
+        </div>  
+    </div>
+
+    <hr>
+    {{>footer}}
+       
+       
+   
+
+     <script src="/logic/index.js"></script>
+      <script>
+         const searchFunc=()=>{
+            let filter=document.getElementById("searchbar").value.toLowerCase()
+
+            for(var i=1;i<=9;i++){
+                let x=document.getElementById(`skills${i}`)
+                y=x.innerHTML
+                console.log(y)
+
+                if(y.toLowerCase().indexOf(filter)>-1){
+                    console.log('found')
+                    let z=document.getElementById(`student${i}`)
+                    console.log(z)
+                    z.style.display=''
+                 }
+                else{
+                    console.log('Not found')
+                    let z1=document.getElementById(`student${i}`)
+                    z1.style.display='none'
+                }
+                
+            }
+        }
+    </script>
+</body>
+</html>

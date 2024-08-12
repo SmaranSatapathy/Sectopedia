@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ {{>header}}
+    <title>Document</title>
+</head>
+<body>
+    {{>navbar}}
+    <div class="login">
+        <div class="leftcard">
+            <img src="https://i.etsystatic.com/25950875/r/il/d90c9c/5277526957/il_fullxfull.5277526957_67tl.jpg" alt="">
+        </div>
+        <div class="rightcard">
+
+            <form action="" method="post">
+                    <h1>Login into your Account</h1>
+            {{!-- <label for="name"><input type="text" name="fname" id="fname" placeholder="Enter first name"></label>
+            <label for="name"><input type="text" name="lname" id="lname" placeholder="Enter last name"></label> --}}
+            <label for="email"><input type="email" name="email" id="email" placeholder="Enter a valid e-mail"></label>
+            
+           
+            <label for="password"><input type="password" name="password" id="password" placeholder="Enter a valid password"></label>
+            <p>New in here? <a href="">Sign Up </a>here</p>
+                <button>Log in</button>
+        </form>
+        </div>
+    </div>
+
+    <br>
+    {{>footer}}
+        <script src="/logic/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <title>Document</title>
+</head>
+<body>
+    {{>navbar}}
+    <div class="searchArea">
+        <input type="search" name="searchbar" id="searchbar" placeholder="Search notes..." onkeyup="searchFunc()">
+    </div>
+
+    <div class="status" id="status" onkeyup="searchFunc()"></div>
+
+    <h1><u>TIMETABLE</u></h1>
+    <div class="timetable" id="timetable">
+        <img src="/resources/timetable.jpg" alt="">
+    </div>
+
+    <h1 class="notes_heading"><u>Notes Section</u></h1>
+    <div class="notes">
+        <div class="note" id="note1">
+            <div class="note_pic"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/PDF_icon.svg/1792px-PDF_icon.svg.png" alt="" width="200px" height="250px"></div>
+            <div class="notes_des">
+            <h5 id="noteName1">Universal Human Values Notes</h5>
+            <a href="/resources/AD2 Notes.pdf" download="AD2 Notes"><button>Download</button></a>
+        </div>
+        </div>
+        <div class="note" id="note2">
+            <div class="note_pic"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/PDF_icon.svg/1792px-PDF_icon.svg.png" alt="" width="200px" height="250px"></div>
+            <div class="notes_des">
+            <h5 id="noteName2">DSA Notes</h5>
+            <a href="/resources/AD2 Notes.pdf" download="AD2 Notes"><button>Download</button></a>
+        </div>
+        </div>
+
+        <div class="note" id="note3">
+            <div class="note_pic"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/PDF_icon.svg/1792px-PDF_icon.svg.png" alt="" width="200px" height="250px"></div>
+            <div class="notes_des">
+            <h5 id="noteName3">COA Notes</h5>
+            <a href="/resources/AD2 Notes.pdf" download="AD2 Notes"><button>Download</button></a>
+        </div>
+        </div>
+
+        <div class="note" id="note4">
+            <div class="note_pic"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/PDF_icon.svg/1792px-PDF_icon.svg.png" alt="" width="200px" height="250px"></div>
+            <div class="notes_des">
+            <h5 id="noteName4">AD2 Notes</h5>
+            <a href="/resources/AD2 Notes.pdf" download="AD2 Notes"><button>Download</button></a>
+        </div>
+        </div>
+
+        <div class="note" id="note5">
+            <div class="note_pic"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/PDF_icon.svg/1792px-PDF_icon.svg.png" alt="" width="200px" height="250px"></div>
+            <div class="notes_des">
+            <h5 id="noteName5">Javascript Notes</h5>
+            <a href="/resources/AD2 Notes.pdf" download="AD2 Notes"><button>Download</button></a>
+        </div>
+        </div>
+        <div class="note" id="note6">
+            <div class="note_pic"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/PDF_icon.svg/1792px-PDF_icon.svg.png" alt="" width="200px" height="250px"></div>
+            <div class="notes_des">
+            <h5 id="noteName6">Python Notes</h5>
+            <a href="/resources/AD2 Notes.pdf" download="AD2 Notes"><button>Download</button></a>
+        </div>
+        </div>
+        <div class="note" id="note7">
+            <div class="note_pic"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/PDF_icon.svg/1792px-PDF_icon.svg.png" alt="" width="200px" height="250px"></div>
+            <div class="notes_des">
+            <h5 id="noteName7">Digital Logics Notes</h5>
+            <a href="/resources/AD2 Notes.pdf" download="AD2 Notes"><button>Download</button></a>
+        </div>
+        </div>
+        <div class="note" id="note8">
+            <div class="note_pic"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/PDF_icon.svg/1792px-PDF_icon.svg.png" alt="" width="200px" height="250px"></div>
+            <div class="notes_des">
+            <h5 id="noteName8">Machine Learning Notes</h5>
+            <a href="/resources/AD2 Notes.pdf" download="AD2 Notes"><button>Download</button></a>
+        </div>
+        </div>
+        <div class="note" id="note9">
+            <div class="note_pic"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/PDF_icon.svg/1792px-PDF_icon.svg.png" alt="" width="200px" height="250px"></div>
+            <div class="notes_des">
+            <h5 id="noteName9">Calculus Notes</h5>
+            <a href="/resources/AD2 Notes.pdf" download="AD2 Notes"><button>Download</button></a>
+        </div>
+        </div>     
+    </div>
+
+    <hr>
+    {{>footer}}
+
+    <script src="/logic/index.js"></script>
+    <script>
+         const searchFunc=()=>{
+            let filter=document.getElementById("searchbar").value.toLowerCase()
+
+            for(var i=1;i<=9;i++){
+                let x=document.getElementById(`noteName${i}`)
+                y=x.innerHTML
+                console.log(y)
+
+                if(y.toLowerCase().indexOf(filter)>-1){
+                    console.log('found')
+                    {{!-- let tt=document.getElementById("timetable")
+                    tt.style.display="none" --}}
+                    let z=document.getElementById(`note${i}`)
+                    console.log(z)
+                    z.style.display=''
+                    {{!-- let stat=document.getElementById("status")
+                    stat.innerHTML="Search result found!!" --}}
+                 }
+                else{
+                    console.log('Not found')
+                    {{!-- let stat=document.getElementById("status")
+                    stat.innerHTML="No results found!!" --}}
+                    let z1=document.getElementById(`note${i}`)
+                    z1.style.display='none'
+                }
+                
+            }
+        }
+    </script>
+</body>
+</html>

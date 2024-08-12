@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {{>header}}
+    <title>Document</title>
+</head>
+<body>
+    {{>navbar}}
+
+    <div class="signup">
+        <div class="leftcard">
+            <img src="https://i.etsystatic.com/25950875/r/il/d90c9c/5277526957/il_fullxfull.5277526957_67tl.jpg" alt="">
+        </div>
+        <div class="rightcard">
+
+            <form action="/signup" method="POST">
+                    <h1>Create Account</h1>
+            <label for="name"><input type="text" name="firstname" id="firstname" placeholder="Enter first name"></label>
+            <label for="name"><input type="text" name="lastname" id="lastname" placeholder="Enter last name"></label>
+            <label for="email"><input type="email" name="email" id="email" placeholder="Enter a valid e-mail"></label>
+            <label for="section">Select Section: <select name="section" id="section">
+                <option value="opt">--SELECT--</option>
+                <option value="opt">Sec 32</option>
+                <option value="opt">Sec 27</option>
+            </select></label>
+            <label for="number"><input type="number" name="phone" id="phone" placeholder="Enter your phone number"></label>
+            <label for="birth"><input type="date" name="birth" id="birth" placeholder="Enter your date-of-birth"></label>
+            <p>Password must be atleast 8 characters long and can contain numeric values 0-9</p>
+            <label for="password"><input type="password" name="password" id="password" placeholder="Enter a valid password"></label>
+            <label for="confirm_password"><input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm your password"></label>
+            <p>Already have your profile? <a href="/login">Login </a>here</p>
+                <button type="submit" class="signup">Sign Up</button>
+        </form>
+        </div>
+    </div>
+    <br>
+    {{>footer}}
+        <script src="/logic/index.js"></script>
+</body>
+</html>
